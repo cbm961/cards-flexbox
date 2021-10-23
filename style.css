@@ -1,0 +1,81 @@
+.parent{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.child {
+  flex: 1 0 21%;
+  margin: 5px;
+}
+
+.card{
+ background-color: rgba(211, 211, 211, 0.534);
+  width: 280px;
+ 
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+
+}
+
+.card:hover h4{
+  color: rgb(78, 161, 78);
+
+}
+.card:hover {
+  overflow: hidden;
+}
+.card:hover .image-zoom img {
+    transform: scale(1.5);
+
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+  
+}
+
+.image-zoom {
+  height:200px;
+  overflow:hidden;
+}
+
+.image-zoom img{
+  transition: transform .5s ease;
+}
+
+
+
+
+
+.info{
+    padding:10px;
+    padding-top:0px;
+    overflow: hidden;
+}
+
+.address {
+  font-size: small;
+  color: rgb(128, 125, 125);
+  display:flex;
+  height:15px;
+}
+
+.save {
+  color:rgb(78, 161, 78);
+  display:flex;
+  justify-content: space-between;
+  width:250px;
+
+}
+
+.price {
+  text-decoration:line-through;
+  color:rgb(128, 125, 125);
+}
+
+
+.new-price{
+  float:right;
+  color: rgb(78, 161, 78);
+}
